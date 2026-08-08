@@ -1,0 +1,71 @@
+generated: '2026-08-08'
+method: searched
+source: https://press.stavvy.com/stavvy-acquires-brace
+status: defunct
+summary: >-
+  Brace Software, Inc. operated the Brace Default Management Platform for mortgage
+  loss mitigation from 2017 until its acquisition by Stavvy, announced 1 August 2023.
+  The Brace brand and domain were absorbed into Stavvy's mortgage servicing solution;
+  no independent Brace product, portal, or API surface remains.
+company_lifecycle:
+  founded: '2017'
+  founders:
+  - Eric Rachmel
+  - Amr Mohamed
+  headquarters: Culver City, California, United States
+  acquired: true
+  acquirer: Stavvy
+  acquisition_announced: '2023-08-01'
+  acquisition_source: https://press.stavvy.com/stavvy-acquires-brace
+  successor_product: https://stavvy.com/mortgage-servicing-solution
+  brand_retired: true
+api_lifecycle:
+  public_api: false
+  developer_portal: false
+  versioning: null
+  deprecation:
+    policy_url: null
+    sunset_header: false
+    note: >-
+      No deprecation policy was ever published, because no public API or developer
+      program was published under the Brace brand.
+  sla: null
+  status_page: null
+deprecated_operations: []
+end_of_life:
+  domain: brace.ai
+  disposition: 301-redirect-to-acquirer
+  redirect_target: https://stavvy.com/mortgage-servicing-solution
+  subdomains_resolving: []
+  subdomains_checked:
+  - docs.brace.ai
+  - developer.brace.ai
+  - developers.brace.ai
+  - api.brace.ai
+  - app.brace.ai
+x-evidence:
+  checked: '2026-08-08'
+  probes:
+  - url: https://brace.ai/
+    status: 301
+    note: Location https://stavvy.com/mortgage-servicing-solution
+  - url: https://brace.ai/robots.txt
+    status: 301
+    note: every path on the apex 301s to the acquirer
+  - url: https://brace.ai/openapi.json
+    status: 404
+  - url: https://brace.ai/llms.txt
+    status: 404
+  - url: https://brace.ai/.well-known/security.txt
+    status: 404
+  - url: https://docs.brace.ai/
+    status: 0
+    note: no DNS record
+  - url: https://api.brace.ai/
+    status: 0
+    note: no DNS record
+  - url: https://press.stavvy.com/stavvy-acquires-brace
+    status: 200
+  - url: https://web.archive.org/cdx/search/cdx?url=brace.ai*
+    status: 200
+    note: no /developers, /docs, /api or spec path in the archived URL index

@@ -1,17 +1,43 @@
 aid: brace
 name: Brace
-description: 'Brace is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Brace (Brace Software, Inc., brace.ai) was a Culver City, California
+  fintech founded in 2017 by Eric Rachmel and Amr Mohamed that rebuilt mortgage default
+  servicing as software. Its Default Management Platform covered the end-to-end loss-mitigation
+  lifecycle for servicers, lenders and investors — a homeowner engagement portal, a
+  centralized responsive application, a rules and underwriting engine, document classification
+  and data extraction, and event-driven communications and reporting — replacing the
+  paper-based, inconsistent default workflows used by top U.S. mortgage servicers.
+  The company raised a reported ~$30M and was acquired by Boston-based mortgage technology
+  firm Stavvy, announced 1 August 2023, folding Brace''s loss-mitigation platform into
+  Stavvy''s eClosing, digital notarization and foreclosure suite. Brace does not survive
+  as an independent surface: brace.ai now 301-redirects every path to stavvy.com/mortgage-servicing-solution,
+  and no docs., developer., api. or app. subdomain resolves in DNS. No public API,
+  developer portal, machine-readable specification or SDK was ever published under
+  the Brace brand — the Wayback CDX index for brace.ai carries no developer or API
+  path — so this profile records identity and exit rather than an API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/brace/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
 x-tier-reason: harvest
+x-status: defunct
+x-acquired-by: Stavvy (announced 2023-08-01)
+x-founded: '2017'
+x-headquarters: Culver City, California, United States
 specificationVersion: '0.20'
 created: '2026-08-08'
 modified: '2026-08-08'
 tags:
 - Company
+- Mortgage
+- Mortgage Servicing
+- Loss Mitigation
+- Default Servicing
+- Financial Services
+- Fintech
+- Real Estate
+- Workflow Automation
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +45,42 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/brace-domain-security.yml
 - type: Website
+  url: https://brace.ai/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/brace-ai
+- type: SecondaryMarket
   url: https://forgeglobal.com/brace_stock/
+- type: PressRelease
+  name: Fintech Powerhouses, Stavvy and Brace, Join Forces to Lead Servicing Innovation
+  url: https://press.stavvy.com/stavvy-acquires-brace
+- type: Lifecycle
+  url: lifecycle/brace-lifecycle.yml
+x-enrichment:
+  date: '2026-08-08'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: defunct
+  detail: Brace was acquired by Stavvy (announced 1 August 2023) and fully absorbed
+    — brace.ai now 301-redirects every path, including /robots.txt, to stavvy.com/mortgage-servicing-solution,
+    and docs., developer., api. and app.brace.ai have all been removed from DNS, so
+    there is no Brace-branded surface left to read.
+  evidence:
+  - url: https://brace.ai/
+    status: 301
+  - url: https://brace.ai/openapi.json
+    status: 404
+  - url: https://brace.ai/llms.txt
+    status: 404
+  - url: https://docs.brace.ai/
+    status: 0
+  - url: https://api.brace.ai/
+    status: 0
+  - url: https://press.stavvy.com/stavvy-acquires-brace
+    status: 200
+  checked: '2026-08-08'
