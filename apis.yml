@@ -57,10 +57,10 @@ tags:
 - Mortgage Servicing
 - Loss Mitigation
 - Default Servicing
-- Financial-Services
+- Financial Services
 - Fintech
-- Real-Estate
-- Workflow-Automation
+- Real Estate
+- Workflow Automation
 - Acquired
 - Defunct
 tags_raw:
@@ -75,6 +75,9 @@ tags_raw:
 - Workflow Automation
 - Acquired
 - Defunct
+- Financial-Services
+- Real-Estate
+- Workflow-Automation
 apis: []
 maintainers:
 - FN: Kin Lane
